@@ -1,0 +1,51 @@
+/*
+ * Copyright (c) 2020 The ZMK Contributors
+ *
+ * SPDX-License-Identifier: MIT
+ */
+
+#include <behaviors.dtsi>
+#include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/bt.h>
+
+#define HRML(k1, k2, k3, k4) &ht LCTRL k1 &ht LALT k2 &ht LSHIFT k3 &ht LGUI k4
+#define HRMR(k1, k2, k3, k4) &ht RGUI k1 &ht RSHIFT k2 &ht LALT k3 &ht RCTRL k4
+#define BASE 0
+#define SYM1 1
+#define SYM2 2
+#define NAV 3
+#define MISC 4
+
+/ {
+        keymap {
+                compatible = "zmk,keymap";
+
+                default_layer {
+// --------------------------------------------------------------------------------------------------------------------
+// |    Q    |    W    |    F    |    P    |    B    |              |    J    |    L    |    U    |    Y    |    Ü    |
+// |    A    |    R    |    S    |    T    |    G    |              |    M    |    N    |    E    |    I    |    O    |
+// |    Z    |    X    |    C    |    D    |    V    |              |    K    |    D    |    Õ    |    Ä    |    Ö    |
+//                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
+                        bindings = <
+    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U     &kp Y     &kp LBKT
+   HRML(A,        R,        S,           T)    &kp G                 &kp M    HRMR(N,        E,        I,        O)
+    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp D     &kp RBKT  &kp APOS  &kp SEMI
+                        &lt SYM1 ESC &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
+                        >;
+                };
+
+                first_symbols_layer {
+// --------------------------------------------------------------------------------------------------------------------
+// |    1    |    2    |    3    |    4    |    5    |              |    6    |    7    |    8    |    9    |    0    |
+// |    /    |    *    |    |    |    ^    |    \    |              |    ?    |    !    |    ,    |    .    |    -    |
+// |    %    |    #    |    &    |    @    |    ~    |              |    +    |    =    |    ;    |    :    |    _    |
+//                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
+                        bindings = <
+    &kp 1     &kp 2        &kp 3     &kp 4          &kp 5            &kp 6         &kp 7     &kp 8         &kp 9       &kp 0
+    &kp LS(7) &kp LS(BSLH) &kp PIPE  &kp LALT(APOS) &kp LALT(MINUS)  &kp LS(MINUS) &kp EXCL  &kp COMMA     &kp DOT     &kp FSLH
+    &kp PRCNT &kp HASH     &kp LS(6) &kp LALT(2)    &kp TILDE        &kp MINUS     &kp LS(0) &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)
+                           &kp ESC   &kp SPACE      &kp TAB          &kp ENTER     &kp BSPC  &kp DEL
+                        >;
+                };
+        };
+};
