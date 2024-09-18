@@ -10,7 +10,6 @@
 #include "zmk-helpers/key-labels/36.h"
 
 #define BASE 0
-#define SYM1 1
 
 // ---------- SETTINGS ----------
 
@@ -28,16 +27,4 @@ ZMK_LAYER(default_layer,
     &kp A     &kp R     &kp S        &kp T     &kp G                 &kp M     &kp N     &kp E     &kp I     &kp O
     &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp D     &kp RBKT  &kp APOS  &kp SEMI
                         &kp ESC      &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
-)
-
-ZMK_LAYER(symbols1_layer,
-// --------------------------------------------------------------------------------------------------------------------
-// |    1    |    2    |    3    |    4    |    5    |              |    6    |    7    |    8    |    9    |    0    |
-// |    /    |    *    |    |    |    ^    |    \    |              |    ?    |    !    |    ,    |    .    |    -    |
-// |    %    |    #    |    &    |    @    |    ~    |              |    +    |    =    |    ;    |    :    |    _    |
-//                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
-    &kp 1     &kp 2        &kp 3     &kp 4          &kp 5            &kp 6         &kp 7     &kp 8         &kp 9       &kp 0
-    &kp LS(7) &kp LS(BSLH) &kp PIPE  &kp LALT(APOS) &kp LALT(MINUS)  &kp LS(MINUS) &kp EXCL  &kp COMMA     &kp DOT     &kp FSLH
-    &kp PRCNT &kp HASH     &kp LS(6) &kp LALT(2)    &kp TILDE        &kp MINUS     &kp LS(0) &kp LS(COMMA) &kp LS(DOT) &kp LS(FSLH)
-                           &kp ESC   &kp SPACE      &kp TAB          &kp ENTER     &kp BSPC  &kp DEL
 )
