@@ -24,8 +24,26 @@
 #define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
 #define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
 
-#define HRML(k1, k2, k3, k4) &ht LCTRL k1 &ht LALT k2 &ht LSHIFT k3 &ht LGUI k4
-#define HRMR(k1, k2, k3, k4) &ht RGUI k1 &ht RSHIFT k2 &ht LALT k3 &ht RCTRL k4
+ZMK_HOLD_TAP(hml,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+
+ZMK_HOLD_TAP(hmr,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+
+#define HRML(k1, k2, k3, k4) &hml LCTRL k1 &hml LALT k2 &hml LSHIFT k3 &hml LGUI k4
+#define HRMR(k1, k2, k3, k4) &hmr RGUI k1 &hmr RSHIFT k2 &hmr LALT k3 &hmr RCTRL k4
 
 // ---------- SETTINGS ----------
 
