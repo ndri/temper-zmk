@@ -27,7 +27,7 @@ ZMK_LAYER(default_layer,
     &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U     &kp Y     &kp LBKT
     &kp A     &kp R     &kp S        &kp T     &kp G                 &kp M     &kp N     &kp E     &kp I     &kp O
     &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp D     &kp RBKT  &kp APOS  &kp SEMI
-                        &lt SYM1 ESC &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
+                        &kp ESC      &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
 )
 
 ZMK_LAYER(symbols1_layer,
