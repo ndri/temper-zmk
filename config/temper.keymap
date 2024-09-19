@@ -10,6 +10,40 @@
 #include "zmk-helpers/key-labels/36.h"
 
 #define BASE 0
+#define SYM1 1
+#define SYM2 2
+#define NAV 3
+#define MISC 4
+
+#define XXX &none
+#define ___ &trans
+
+#define QUICK_TAP_MS 175
+
+#define KEYS_L LT0 LT1 LT2 LT3 LT4 LM0 LM1 LM2 LM3 LM4 LB0 LB1 LB2 LB3 LB4
+#define KEYS_R RT0 RT1 RT2 RT3 RT4 RM0 RM1 RM2 RM3 RM4 RB0 RB1 RB2 RB3 RB4
+#define THUMBS LH2 LH1 LH0 RH0 RH1 RH2
+
+ZMK_HOLD_TAP(hml,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_R THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+
+ZMK_HOLD_TAP(hmr,
+    flavor = "balanced";
+    tapping-term-ms = <280>;
+    require-prior-idle-ms = <150>;
+    hold-trigger-key-positions = <KEYS_L THUMBS>;
+    hold-trigger-on-release;
+    bindings = <&kp>, <&kp>;
+)
+
+#define HRML(k1, k2, k3, k4) &hml LCTRL k1 &hml LALT k2 &hml LSHIFT k3 &hml LGUI k4
+#define HRMR(k1, k2, k3, k4) &hmr RGUI k1 &hmr RSHIFT k2 &hmr LALT k3 &hmr RCTRL k4
 
 // ---------- SETTINGS ----------
 
@@ -24,7 +58,7 @@ ZMK_LAYER(default_layer,
 // |    Z    |    X    |    C    |    D    |    V    |              |    K    |    D    |    Õ    |    Ä    |    Ö    |
 //                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
     &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U     &kp Y     &kp LBKT
-    &kp A     &kp R     &kp S        &kp T     &kp G                 &kp M     &kp N     &kp E     &kp I     &kp O
+   HRML(A,        R,        S,           T)    &kp G                 &kp M    HRMR(N,        E,        I,        O)
     &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp D     &kp RBKT  &kp APOS  &kp SEMI
                         &kp ESC      &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
 )
