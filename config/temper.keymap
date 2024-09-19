@@ -55,10 +55,22 @@ ZMK_LAYER(default_layer,
 // --------------------------------------------------------------------------------------------------------------------
 // |    Q    |    W    |    F    |    P    |    B    |              |    J    |    L    |    U    |    Y    |    Ü    |
 // |    A    |    R    |    S    |    T    |    G    |              |    M    |    N    |    E    |    I    |    O    |
-// |    Z    |    X    |    C    |    D    |    V    |              |    K    |    D    |    Õ    |    Ä    |    Ö    |
+// |    Z    |    X    |    C    |    D    |    V    |              |    K    |    H    |    Õ    |    Ä    |    Ö    |
 //                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
     &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U     &kp Y     &kp LBKT
    HRML(A,        R,        S,           T)    &kp G                 &kp M    HRMR(N,        E,        I,        O)
-    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp D     &kp RBKT  &kp APOS  &kp SEMI
-                        &kp ESC      &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
+    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp H     &kp RBKT  &kp APOS  &kp SEMI
+                        &lt SYM1 ESC &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
+)
+
+ZMK_LAYER(symbols1_layer,
+// --------------------------------------------------------------------------------------------------------------------
+// |    1    |    2    |    3    |    4    |    5    |              |    6    |    7    |    8    |    9    |    0    |
+// |    /    |    *    |    |    |    ^    |    \    |              |    ?    |    !    |    ,    |    .    |    -    |
+// |    %    |    #    |    &    |    @    |    ~    |              |    +    |    =    |    ;    |    :    |    _    |
+//                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
+    &kp 1     &kp 2        &kp 3     &kp 4          &kp 5            &kp 6         &kp 7     &kp 8         &kp 9       &kp 0
+    &kp ___   &kp ___      &kp ___   &kp ___        &kp ___          &kp ___       &kp ___   &kp ___       &kp ___     &kp ___
+    &kp ___   &kp ___      &kp ___   &kp ___        &kp ___          &kp ___       &kp ___   &kp ___       &kp ___     &kp ___
+                           &kp ESC   &kp SPACE      &kp TAB          &kp ENTER     &kp BSPC  &kp DEL
 )
