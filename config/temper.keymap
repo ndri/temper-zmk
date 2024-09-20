@@ -73,3 +73,4 @@ ZMK_LAYER(symbols1_layer,
     &kp LS(N7) &kp LS(BSLH) &kp LA(LT) &kp LA(APOS) &kp LA(MINUS)    &kp ___       &kp ___   &kp ___       &kp ___     &kp ___
     &kp PRCNT  &kp HASH     &kp LS(N6) &kp LA(N2)   &kp TILDE2       &kp ___       &kp ___   &kp ___       &kp ___     &kp ___
                             &kp ESC    &kp SPACE    &kp TAB          &kp ENTER     &kp BSPC  &kp DEL
+)
