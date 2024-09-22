@@ -76,9 +76,9 @@ ZMK_LAYER(symbols1_layer,
                             &kp ESC            &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
 )
 
-ZMK_LAYER(symbols2_layer,
-    &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC &kp ET_TILDE &kp ET_POUND_SIGN &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
-    &kp ET_EURO &kp ET_DQT &kp ET_HASH &kp ET_DLLR &kp ET_PRCNT &kp ET_SQT &kp ET_LPAR &kp ET_RPAR &kp ET_LT &kp ET_GT
-    &kp ET_LBKT &kp ET_RBKT &kp ET_GRAVE &kp ET_TILDE &kp TILDE &kp TILDE2  &kp NUHS &kp KP_PLUS  &kp KP_MINUS &kp KP_EQUAL
-                            &kp ESC            &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
-)
+// ZMK_LAYER(symbols2_layer,
+//     &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC &kp ET_TILDE &kp ET_POUND_SIGN &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
+//     &kp ET_EURO &kp ET_DQT &kp ET_HASH &kp ET_DLLR &kp ET_PRCNT &kp ET_SQT &kp ET_LPAR &kp ET_RPAR &kp ET_LT &kp ET_GT
+//     &kp ET_LBKT &kp ET_RBKT &kp ET_GRAVE &kp ET_TILDE &kp TILDE &kp TILDE2  &kp NUHS &kp KP_PLUS  &kp KP_MINUS &kp KP_EQUAL
+//                             &kp ESC            &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
+// )
