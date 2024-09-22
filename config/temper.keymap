@@ -58,10 +58,10 @@ ZMK_LAYER(default_layer,
 // |    A    |    R    |    S    |    T    |    G    |              |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |              |    K    |    H    |    Õ    |    Ä    |    Ö    |
 //                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
-    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U     &kp Y     &kp LBKT
-   HRML(A,        R,        S,           T)    &kp G                 &kp M    HRMR(N,        E,        I,        O)
-    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp H     &kp RBKT  &kp APOS  &kp SEMI
-                        &lt SYM1 ESC &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &kp DEL
+    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U           &kp Y            &kp ET_U_UMLAUT
+   HRML(A,        R,        S,           T)    &kp G                 &kp M    HRMR(N,        E,              I,               O)
+    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp H     &kp ET_O_TILDE  &kp ET_A_UMLAUT  &kp ET_O_UMLAUT
+                        &lt SYM1 ESC &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &lt SYM2 DEL
 )
 
 ZMK_LAYER(symbols1_layer,
@@ -70,8 +70,15 @@ ZMK_LAYER(symbols1_layer,
 // |    /    |    *    |    |    |    ^    |    \    |              |    ?    |    !    |    ,    |    .    |    -    |
 // |    %    |    #    |    &    |    @    |    ~    |              |    +    |    =    |    ;    |    :    |    _    |
 //                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
-    &kp N1      &kp N2      &kp N3      &kp N4      &kp N5           &kp N6    &kp N7    &kp N8    &kp N9    &kp N0
-    &kp ET_FSLH &kp ET_STAR &kp ET_PIPE &kp ET_APOS &kp ET_BSLH      &kp QMARK &kp EXCL  &kp COMMA &kp DOT   &kp MINUS
-    &kp PRCNT   &kp HASH    &kp ET_AMPS &kp ET_AT   &kp ET_TILDE     &kp PLUS  &kp EQUAL &kp SEMI  &kp COLON &kp UNDER
-                            &kp ESC     &kp SPACE   &kp TAB          &kp ENTER &kp BSPC  &kp DEL
+    &kp N1      &kp N2      &kp N3             &kp N4       &kp N5           &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
+    &kp ET_FSLH &kp ET_STAR &kp LALT(ET_TILDE) &kp ET_CARET &kp ET_BSLH      &kp ET_QMARK &kp EXCL     &kp COMMA    &kp DOT      &kp ET_MINUS
+    &kp PRCNT   &kp HASH    &kp ET_AMPS        &kp ET_AT    &kp ET_TILDE     &kp ET_PLUS  &kp ET_EQUAL &kp ET_SEMI  &kp ET_COLON &kp ET_UNDER
+                            &kp ESC            &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
+)
+
+ZMK_LAYER(symbols2_layer,
+    &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC &kp ET_TILDE &kp ET_POUND_SIGN &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
+    &kp ET_EURO &kp ET_DQT &kp ET_HASH &kp ET_DLLR &kp ET_PRCNT &kp ET_SQT &kp ET_LPAR &kp ET_RPAR &kp ET_LT &kp ET_GT
+    &kp ET_LBKT &kp ET_RBKT &kp ET_GRAVE &kp ET_TILDE &kp TILDE &kp TILDE2  &kp NUHS &kp KP_PLUS  &kp KP_MINUS &kp KP_EQUAL
+                            &kp ESC            &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
 )
