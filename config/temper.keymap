@@ -69,16 +69,40 @@ ZMK_LAYER(symbols1_layer,
 // |    1    |    2    |    3    |    4    |    5    |              |    6    |    7    |    8    |    9    |    0    |
 // |    /    |    *    |    |    |    ^    |    \    |              |    ?    |    !    |    ,    |    .    |    -    |
 // |    %    |    #    |    &    |    @    |    ~    |              |    +    |    =    |    ;    |    :    |    _    |
-//                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
+//                     |         |         |         |              |         |         |         |
     &kp N1      &kp N2      &kp N3           &kp N4       &kp N5           &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
     &kp ET_FSLH &kp ET_STAR &kp LA(ET_TILDE) &kp ET_CARET &kp ET_BSLH      &kp ET_QMARK &kp EXCL     &kp COMMA    &kp DOT      &kp ET_MINUS
-    &kp PRCNT   &kp HASH    &kp ET_AMPS      &kp ET_AT    &kp ET_TILDE     &kp ET_PLUS  &kp ET_EQUAL &kp ET_SEMI  &kp ET_COLON &kp ET_UNDER
-                            &kp ESC          &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
+    &kp PRCNT   &kp HASH    &kp ET_AMPS      &kp ET_AT    &kp KP_EQUAL     &kp ET_PLUS  &kp ET_EQUAL &kp ET_SEMI  &kp ET_COLON &kp ET_UNDER
+                            &kp ___          &kp ___      &kp ___          &kp ___      &kp ___      &kp ___
 )
 
 ZMK_LAYER(symbols2_layer,
-    &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC &kp ET_TILDE &kp ET_POUND_SIGN &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
-    &kp ET_EURO &kp ET_DQT &kp ET_HASH &kp ET_DLLR &kp ET_PRCNT &kp ET_SQT &kp ET_LPAR &kp ET_RPAR &kp ET_LT &kp ET_GT
-    &kp ET_LBKT &kp ET_RBKT &kp ET_GRAVE &kp ET_TILDE &kp TILDE &kp TILDE2  &kp NUHS &kp KP_PLUS  &kp KP_MINUS &kp KP_EQUAL
-                            &kp ESC            &kp SPACE    &kp TAB          &kp ENTER    &kp BSPC     &kp DEL
+// --------------------------------------------------------------------------------------------------------------------
+// |         |         |         |         |         |              |         |         |         |         |         |
+// |    (    |    )    |    [    |    ]    |    $    |              |         |         |         |         |         |
+// |    <    |    >    |    {    |    }    |    €    |              |         |         |    '    |    "    |    `    |
+//                     |         |         |         |              |         |         |         |
+    &kp ___      &kp ___      &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
+    &kp ET_LPAR  &kp ET_RPAR  &kp ET_LBKT &kp ET_RBKT &kp ET_DLLR     &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
+    &kp ET_CARON &kp ET_TILDE &kp ET_LBRC &kp ET_RBRC &kp ET_CURREN   &kp ___ &kp ___ &kp ET_SQT &kp ET_DQT &kp LA(ET_ACUTE)
+                              &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___
 )
+
+ZMK_LAYER(test_layer,
+    &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC  &kp ET_TILDE &kp ET_POUND_SIGN   &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
+    &kp ET_EURO &kp ET_DQT  &kp ET_HASH  &kp ET_DLLR  &kp ET_PRCNT        &kp ET_SQT    &kp ET_LPAR &kp ET_RPAR  &kp ET_LT       &kp ET_GT
+    &kp ET_LBKT &kp ET_RBKT &kp ET_GRAVE &kp ET_TILDE &kp TILDE           &kp TILDE2    &kp NUHS    &kp KP_PLUS  &kp KP_MINUS    &kp KP_EQUAL
+                            &kp ___      &kp ___      &kp ___             &kp ___       &kp ___     &kp ___
+)
+
+// ZMK_LAYER(new_layer,
+// // --------------------------------------------------------------------------------------------------------------------
+// // |         |         |         |         |         |              |         |         |         |         |         |
+// // |         |         |         |         |         |              |         |         |         |         |         |
+// // |         |         |         |         |         |              |         |         |         |         |         |
+// //                     |         |         |         |              |         |         |         |
+//     &kp ___ &kp ___ &kp ___ &kp ___ &kp ___                           &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
+//     &kp ___ &kp ___ &kp ___ &kp ___ &kp ___                           &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
+//     &kp ___ &kp ___ &kp ___ &kp ___ &kp ___                           &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
+//                     &kp ___ &kp ___ &kp ___                           &kp ___ &kp ___ &kp ___
+// )
