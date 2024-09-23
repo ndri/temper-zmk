@@ -58,10 +58,10 @@ ZMK_LAYER(default_layer,
 // |    A    |    R    |    S    |    T    |    G    |              |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |              |    K    |    H    |    Õ    |    Ä    |    Ö    |
 //                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
-    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J     &kp L     &kp U           &kp Y            &kp ET_U_UMLAUT
-   HRML(A,        R,        S,           T)    &kp G                 &kp M    HRMR(N,        E,              I,               O)
-    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K     &kp H     &kp ET_O_TILDE  &kp ET_A_UMLAUT  &kp ET_O_UMLAUT
-                        &lt SYM1 ESC &kp SPACE &kp TAB               &kp ENTER &kp BSPC  &lt SYM2 DEL
+    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J         &kp L     &kp U           &kp Y            &kp ET_U_UMLAUT
+   HRML(A,        R,        S,           T)    &kp G                 &kp M        HRMR(N,        E,              I,               O)
+    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K         &kp H     &kp ET_O_TILDE  &kp ET_A_UMLAUT  &kp ET_O_UMLAUT
+                        &lt SYM1 ESC &kp SPACE &kp TAB               &lt NAV ENTER &kp BSPC  &lt SYM2 DEL
 )
 
 ZMK_LAYER(symbols1_layer,
@@ -82,11 +82,10 @@ ZMK_LAYER(symbols2_layer,
 // |    (    |    )    |    [    |    ]    |    $    |              |         |         |         |         |         |
 // |    <    |    >    |    {    |    }    |    €    |              |         |         |    '    |    "    |    `    |
 //                     |         |         |         |              |         |         |         |
-    &kp ___      &kp ___      &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
+    &kp ___      &kp ___      &kp ___     &kp ___     &kp ___         &kp &trans &kp ___ &kp ___    &kp ___    &kp ___
     &kp ET_LPAR  &kp ET_RPAR  &kp ET_LBKT &kp ET_RBKT &kp ET_DLLR     &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
     &kp ET_CARON &kp ET_TILDE &kp ET_LBRC &kp ET_RBRC &kp ET_CURREN   &kp ___ &kp ___ &kp ET_SQT &kp ET_DQT &kp LA(ET_ACUTE)
-                              &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___
-)
+                              &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &k
 
 ZMK_LAYER(test_layer,
     &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC  &kp ET_TILDE &kp ET_POUND_SIGN   &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
