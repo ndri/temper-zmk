@@ -85,7 +85,8 @@ ZMK_LAYER(symbols2_layer,
     &kp ___      &kp ___      &kp ___     &kp ___     &kp ___         &kp &trans &kp ___ &kp ___    &kp ___    &kp ___
     &kp ET_LPAR  &kp ET_RPAR  &kp ET_LBKT &kp ET_RBKT &kp ET_DLLR     &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
     &kp ET_CARON &kp ET_TILDE &kp ET_LBRC &kp ET_RBRC &kp ET_CURREN   &kp ___ &kp ___ &kp ET_SQT &kp ET_DQT &kp LA(ET_ACUTE)
-                              &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &k
+                              &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___
+)
 
 ZMK_LAYER(test_layer,
     &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC  &kp ET_TILDE &kp ET_POUND_SIGN   &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
