@@ -72,7 +72,7 @@ ZMK_LAYER(symbols1_layer,
 //                     |         |         |         |              |         |         |         |
     &kp N1      &kp N2      &kp N3           &kp N4       &kp N5           &kp N6       &kp N7       &kp N8       &kp N9       &kp N0
     &kp ET_FSLH &kp ET_STAR &kp LA(ET_TILDE) &kp ET_CARET &kp ET_BSLH      &kp ET_QMARK &kp EXCL     &kp COMMA    &kp DOT      &kp ET_MINUS
-    &kp PRCNT   &kp HASH    &kp ET_AMPS      &kp ET_AT    &kp KP_EQUAL     &kp ET_PLUS  &kp ET_EQUAL &kp ET_SEMI  &kp ET_COLON &kp ET_UNDER
+    &kp PRCNT   &kp HASH    &kp ET_AMPS      &kp ET_AT    &kp ET_GT        &kp ET_PLUS  &kp ET_EQUAL &kp ET_SEMI  &kp ET_COLON &kp ET_UNDER
                             &kp ___          &kp ___      &kp ___          &kp ___      &kp ___      &kp ___
 )
 
@@ -82,7 +82,7 @@ ZMK_LAYER(symbols2_layer,
 // |    (    |    )    |    [    |    ]    |    $    |              |         |         |         |         |         |
 // |    <    |    >    |    {    |    }    |    €    |              |         |         |    '    |    "    |    `    |
 //                     |         |         |         |              |         |         |         |
-    &kp ___      &kp ___      &kp ___     &kp ___     &kp ___         &kp &trans &kp ___ &kp ___    &kp ___    &kp ___
+    &kp ___      &kp ___      &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
     &kp ET_LPAR  &kp ET_RPAR  &kp ET_LBKT &kp ET_RBKT &kp ET_DLLR     &kp ___ &kp ___ &kp ___    &kp ___    &kp ___
     &kp ET_CARON &kp ET_TILDE &kp ET_LBRC &kp ET_RBRC &kp ET_CURREN   &kp ___ &kp ___ &kp ET_SQT &kp ET_DQT &kp LA(ET_ACUTE)
                               &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___
