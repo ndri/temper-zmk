@@ -88,6 +88,18 @@ ZMK_LAYER(symbols2_layer,
                               &kp ___     &kp ___     &kp ___         &kp ___ &kp ___ &kp ___
 )
 
+ZMK_LAYER(nav_layer,
+// --------------------------------------------------------------------------------------------------------------------
+// |   F1    |   F2    |   F3    |   F4    |         |              |         |  Cmd+←  | Page up | Page dn |  Cmd+→  |
+// |   F5    |   F6    |   F7    |   F8    |         |              |         |    ←    |    ↓    |    ↑    |    →    |
+// |   F9    |   F10   |  F11    |  F12    |         |              |         |   Home  |  Ctrl+← |  Ctrl+→ |   End   |
+//                     |         |         |         |              |         |         |         |
+   &kp F1    &kp F2    &kp F3    &kp F4    &kp ___                  &kp ___ &kp LG(LEFT) &kp PG_UP    &kp PG_DN     &kp LG(RIGHT)
+   &kp F5    &kp F6    &kp F7    &kp F8    &kp ___                  &kp ___ &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+   &kp F9    &kp F10   &kp F11   &kp F12   &kp ___                  &kp ___ &kp HOME     &kp LC(LEFT) &kp LC(RIGHT) &kp END
+                       &kp ___   &kp ___   &kp ___                  &kp ___ &kp ___      &kp ___
+)
+
 ZMK_LAYER(test_layer,
     &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC  &kp ET_TILDE &kp ET_POUND_SIGN   &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
     &kp ET_EURO &kp ET_DQT  &kp ET_HASH  &kp ET_DLLR  &kp ET_PRCNT        &kp ET_SQT    &kp ET_LPAR &kp ET_RPAR  &kp ET_LT       &kp ET_GT

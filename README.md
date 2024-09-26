@@ -11,7 +11,7 @@ This is a work-in-progress to get the keymap that I use on my Moonlander to work
 - [x] Create the second symbols layer
 - [x] Get tilde to work
 - [ ] Get &trans to work
-- [ ] Create the navigation layer
+- [x] Create the navigation layer
 - [ ] Create the miscellaneous layer
 - [ ] Switch away from timeless homerow mods
 - [ ] Add homerow mods to other layers
