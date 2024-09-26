@@ -43,8 +43,8 @@
 //     bindings = <&kp>, <&kp>;
 // )
 
-// #define HRML(k1, k2, k3, k4) &hml LCTRL k1 &hml LALT k2 &hml LSHIFT k3 &hml LGUI k4
-// #define HRMR(k1, k2, k3, k4) &hmr RGUI k1 &hmr RSHIFT k2 &hmr LALT k3 &hmr RCTRL k4
+#define HRML(k1, k2, k3, k4) &mt LCTRL k1 &mt LALT k2 &mt LSHIFT k3 &mt LGUI k4
+#define HRMR(k1, k2, k3, k4) &mt RGUI k1 &mt RSHIFT k2 &mt LALT k3 &mt RCTRL k4
 
 // ---------- SETTINGS ----------
 
@@ -58,10 +58,10 @@ ZMK_LAYER(default_layer,
 // |    A    |    R    |    S    |    T    |    G    |              |    M    |    N    |    E    |    I    |    O    |
 // |    Z    |    X    |    C    |    D    |    V    |              |    K    |    H    |    Õ    |    Ä    |    Ö    |
 //                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
-    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J         &kp L     &kp U           &kp Y            &kp ET_U_UMLAUT
-    &kp A     &kp R     &kp S        &kp T     &kp G                 &kp M         &kp N     &kp E           &kp I            &kp O
-    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K         &kp H     &kp ET_O_TILDE  &kp ET_A_UMLAUT  &kp ET_O_UMLAUT
-                        &lt SYM1 ESC &kp SPACE &kp TAB               &lt NAV ENTER &kp BSPC  &lt SYM2 DEL
+    &kp Q     &kp W     &kp F        &kp P     &kp B                 &kp J         &kp L    &kp U          &kp Y           &kp ET_U_UMLAUT
+   HRML(A,        R,        S,           T)    &kp G                 &kp M        HRMR(N,       E,             I,              O)
+    &kp Z     &kp X     &kp C        &kp D     &kp V                 &kp K         &kp H    &kp ET_O_TILDE &kp ET_A_UMLAUT &kp ET_O_UMLAUT
+                        &lt SYM1 ESC &kp SPACE &lt MISC TAB          &lt NAV ENTER &kp BSPC &lt SYM2 DEL
 )
 
 ZMK_LAYER(symbols1_layer,
@@ -90,11 +90,11 @@ ZMK_LAYER(symbols2_layer,
 
 ZMK_LAYER(nav_layer,
 // --------------------------------------------------------------------------------------------------------------------
-// |   F1    |   F2    |   F3    |   F4    |         |              |         |  Cmd+←  | Page up | Page dn |  Cmd+→  |
+// |   F1    |   F2    |   F3    |   F4    |         |              |         |  Cmd+←  | Page dn | Page up |  Cmd+→  |
 // |   F5    |   F6    |   F7    |   F8    |         |              |         |    ←    |    ↓    |    ↑    |    →    |
 // |   F9    |   F10   |  F11    |  F12    |         |              |         |   Home  |  Ctrl+← |  Ctrl+→ |   End   |
 //                     |         |         |         |              |         |         |         |
-   &kp F1    &kp F2    &kp F3    &kp F4    &kp ___                  &kp ___ &kp LG(LEFT) &kp PG_UP    &kp PG_DN     &kp LG(RIGHT)
+   &kp F1    &kp F2    &kp F3    &kp F4    &kp ___                  &kp ___ &kp LG(LEFT) &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)
    &kp F5    &kp F6    &kp F7    &kp F8    &kp ___                  &kp ___ &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
    &kp F9    &kp F10   &kp F11   &kp F12   &kp ___                  &kp ___ &kp HOME     &kp LC(LEFT) &kp LC(RIGHT) &kp END
                        &kp ___   &kp ___   &kp ___                  &kp ___ &kp ___      &kp ___

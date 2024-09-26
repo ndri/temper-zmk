@@ -13,5 +13,5 @@ This is a work-in-progress to get the keymap that I use on my Moonlander to work
 - [ ] Get &trans to work
 - [x] Create the navigation layer
 - [ ] Create the miscellaneous layer
-- [ ] Switch away from timeless homerow mods
+- [x] Switch away from timeless homerow mods
 - [ ] Add homerow mods to other layers
