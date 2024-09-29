@@ -10,9 +10,9 @@ This is a work-in-progress to get the keymap that I use on my Moonlander to work
 - [x] Create the first symbols layer
 - [x] Create the second symbols layer
 - [x] Get tilde to work
-- [ ] Get &trans to work
 - [x] Create the navigation layer
 - [x] Create the miscellaneous layer
 - [x] Switch away from timeless homerow mods
-- [ ] Improve homerow mods
-- [ ] Add homerow mods to other layers
+- [x] Add timeless homerow mods back
+- [x] Add homerow mods to other layers
+- [ ] Get &trans to work
