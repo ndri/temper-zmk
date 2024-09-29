@@ -12,7 +12,7 @@ This is a work-in-progress to get the keymap that I use on my Moonlander to work
 - [x] Get tilde to work
 - [ ] Get &trans to work
 - [x] Create the navigation layer
-- [ ] Create the miscellaneous layer
+- [x] Create the miscellaneous layer
 - [x] Switch away from timeless homerow mods
-- [ ] Add homerow mods to other layers
 - [ ] Improve homerow mods
+- [ ] Add homerow mods to other layers
