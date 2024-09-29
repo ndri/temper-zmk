@@ -100,6 +100,19 @@ ZMK_LAYER(nav_layer,
                        &kp ___   &kp ___   &kp ___                  &kp ___ &kp ___      &kp ___
 )
 
+ZMK_LAYER(misc_layer,
+// --------------------------------------------------------------------------------------------------------------------
+// |  Reset  |   Stop  |   Prev  |   Next  |         |              |         |         |         |         |  Reset  |
+// |   Play  | VolMute | VolDown |  VolUp  |  Redo2  |              |         |         |         |         |         |
+// |   Undo  |   Cut   |  Paste  |   Copy  |  Redo1  |              |         |         |         |         |         |
+//                     |         |         |         |              |         |         |         |
+    &kp &bootloader &kp C_STOP &kp C_PREV   &kp C_NEXT   &kp ___          &kp ___ &kp ___ &kp ___ &kp ___ &kp &bootloader
+    &kp C_PLAY      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp LG(Y)        &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
+    &kp LG(Z)       &kp LG(X)  &kp LG(V)    &kp LG(C)    &kp LG(LS(Z))    &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
+                               &kp DEL      &kp BSPC     &kp ___          &kp ___ &kp ___ &kp ___
+)
+
+
 ZMK_LAYER(test_layer,
     &kp ET_LBRC &kp ET_PIPE &kp ET_RBRC  &kp ET_TILDE &kp ET_POUND_SIGN   &kp ET_CURREN &kp ET_SECT &kp ET_ACUTE &kp ET_FRAC_1_2 &kp ET_CARON
     &kp ET_EURO &kp ET_DQT  &kp ET_HASH  &kp ET_DLLR  &kp ET_PRCNT        &kp ET_SQT    &kp ET_LPAR &kp ET_RPAR  &kp ET_LT       &kp ET_GT

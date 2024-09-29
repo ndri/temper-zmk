@@ -15,3 +15,4 @@ This is a work-in-progress to get the keymap that I use on my Moonlander to work
 - [ ] Create the miscellaneous layer
 - [x] Switch away from timeless homerow mods
 - [ ] Add homerow mods to other layers
+- [ ] Improve homerow mods
