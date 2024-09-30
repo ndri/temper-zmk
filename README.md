@@ -15,4 +15,4 @@ This is a work-in-progress to get the keymap that I use on my Moonlander to work
 - [x] Switch away from timeless homerow mods
 - [x] Add timeless homerow mods back
 - [x] Add homerow mods to other layers
-- [ ] Get &trans to work
+- [x] Get &trans to work

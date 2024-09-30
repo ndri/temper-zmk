@@ -72,11 +72,11 @@ ZMK_LAYER(symbols1_layer,
 // |    1    |    2    |    3    |    4    |    5    |              |    6    |    7    |    8    |    9    |    0    |
 // |    /    |    *    |    |    |    ^    |    \    |              |    ?    |    !    |    ,    |    .    |    -    |
 // |    %    |    #    |    &    |    @    |    ~    |              |    +    |    =    |    ;    |    :    |    _    |
-//                     |         |         |         |              |         |         |         |
+//                     |         |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |   DEL   |
     &kp N1    &kp N2   &kp N3        &kp N4        &kp N5           &kp N6        &kp N7       &kp N8       &kp N9       &kp N0
    HRML(ET_FSLH,  ET_STAR, LA(ET_TILDE), ET_CARET) &kp ET_BSLH      &kp ET_QMARK HRMR(EXCL,        COMMA,       DOT,         ET_MINUS)
     &kp PRCNT &kp HASH &kp ET_AMPS   &kp ET_AT     &kp ET_GT        &kp ET_PLUS   &kp ET_EQUAL &kp ET_SEMI  &kp ET_COLON &kp ET_UNDER
-                       &kp ___       &kp ___       &kp ___          &kp ___       &kp ___      &kp ___
+                       &kp ___       &kp SPACE     &kp TAB          &kp ENTER     &kp BSPC     &kp DEL
 )
 
 ZMK_LAYER(symbols2_layer,
@@ -84,11 +84,11 @@ ZMK_LAYER(symbols2_layer,
 // |         |         |         |         |         |              |         |         |         |         |         |
 // |    (    |    )    |    [    |    ]    |    $    |              |         |         |         |         |         |
 // |    <    |    >    |    {    |    }    |    €    |              |         |         |    '    |    "    |    `    |
-//                     |         |         |         |              |         |         |         |
-    &kp ___      &kp ___      &kp ___     &kp ___      &kp ___         &kp ___  &kp ___ &kp ___    &kp ___    &kp ___
-   HRML(ET_LPAR,     ET_RPAR,     ET_LBKT,    ET_RBKT) &kp ET_DLLR     &kp ___ HRMR(___,    ___,       ___,       ___)
-    &kp ET_CARON &kp ET_TILDE &kp ET_LBRC &kp ET_RBRC  &kp ET_CURREN   &kp ___  &kp ___ &kp ET_SQT &kp ET_DQT &kp LA(ET_ACUTE)
-                              &kp ___     &kp ___      &kp ___         &kp ___  &kp ___ &kp ___
+//                     |   ESC   |  SPACE  |   TAB   |              |  ENTER  |  BCKSP  |         |
+    &kp ___      &kp ___      &kp ___     &kp ___      &kp ___         &kp ___   &kp ___  &kp ___    &kp ___    &kp ___
+   HRML(ET_LPAR,     ET_RPAR,     ET_LBKT,    ET_RBKT) &kp ET_DLLR     &kp ___  HRMR(___,     ___,       ___,       ___)
+    &kp ET_CARON &kp ET_TILDE &kp ET_LBRC &kp ET_RBRC  &kp ET_CURREN   &kp ___   &kp ___  &kp ET_SQT &kp ET_DQT &kp LA(ET_ACUTE)
+                              &kp ESC     &kp SPACE    &kp TAB         &kp ENTER &kp BSPC &kp ___
 )
 
 ZMK_LAYER(nav_layer,
@@ -96,11 +96,11 @@ ZMK_LAYER(nav_layer,
 // |   F1    |   F2    |   F3    |   F4    |         |              |         |  Cmd+←  | Page dn | Page up |  Cmd+→  |
 // |   F5    |   F6    |   F7    |   F8    |         |              |         |    ←    |    ↓    |    ↑    |    →    |
 // |   F9    |   F10   |  F11    |  F12    |         |              |         |   Home  |  Ctrl+← |  Ctrl+→ |   End   |
-//                     |         |         |         |              |         |         |         |
+//                     |   ESC   |  SPACE  |   TAB   |              |         |  BCKSP  |   DEL   |
    &kp F1    &kp F2    &kp F3    &kp F4     &kp ___                 &kp ___  &kp LG(LEFT) &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)
   HRML(F5,       F6,       F7,       F8)    &kp ___                 &kp ___  &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
    &kp F9    &kp F10   &kp F11   &kp F12    &kp ___                 &kp ___  &kp HOME     &kp LC(LEFT) &kp LC(RIGHT) &kp END
-                       &kp ___   &kp ___    &kp ___                 &kp ___  &kp ___      &kp ___
+                       &kp ESC   &kp SPACE  &kp TAB                 &kp ___  &kp BSPC     &kp DEL
 )
 
 ZMK_LAYER(misc_layer,
@@ -108,7 +108,7 @@ ZMK_LAYER(misc_layer,
 // |  Reset  |   Stop  |   Prev  |   Next  |         |              |         |         |         |         |  Reset  |
 // |   Play  | VolMute | VolDown |  VolUp  |  Redo2  |              |         |         |         |         |         |
 // |   Undo  |   Cut   |  Paste  |   Copy  |  Redo1  |              |         |         |         |         |         |
-//                     |         |         |         |              |         |         |         |
+//                     |   DEL   |  BCKSP  |         |              |         |         |         |
     &kp &bootloader &kp C_STOP &kp C_PREV   &kp C_NEXT   &kp ___          &kp ___ &kp ___ &kp ___ &kp ___ &kp &bootloader
     &kp C_PLAY      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp LG(Y)        &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
     &kp LG(Z)       &kp LG(X)  &kp LG(V)    &kp LG(C)    &kp LG(LS(Z))    &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
