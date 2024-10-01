@@ -103,14 +103,14 @@ ZMK_LAYER(nav_layer,
 
 ZMK_LAYER(misc_layer,
 // --------------------------------------------------------------------------------------------------------------------
-// |  Reset  |   Stop  |   Prev  |   Next  |         |              |         |         |         |         |  Reset  |
+// |  Reset  |   Stop  |   Prev  |   Next  |  Reset  |              |  Reset  |         |         |         |  Reset  |
 // |   Play  | VolMute | VolDown |  VolUp  |  Redo2  |              |         |         |         |         |         |
 // |   Undo  |   Cut   |  Paste  |   Copy  |  Redo1  |              |         |         |         |         |         |
 //                     |   DEL   |  BCKSP  |         |              |         |         |         |
-    &kp &bootloader &kp C_STOP &kp C_PREV   &kp C_NEXT   &kp ___          &kp ___ &kp ___ &kp ___ &kp ___ &kp &bootloader
-    &kp C_PLAY      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp LG(Y)        &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
-    &kp LG(Z)       &kp LG(X)  &kp LG(V)    &kp LG(C)    &kp LG(LS(Z))    &kp ___ &kp ___ &kp ___ &kp ___ &kp ___
-                               &kp DEL      &kp BSPC     &kp ___          &kp ___ &kp ___ &kp ___
+    &kp &bootloader &kp C_STOP &kp C_PREV   &kp C_NEXT   &kp &sys_reset       &kp &sys_reset &kp ___ &kp ___ &kp ___ &kp &bootloader
+    &kp C_PLAY      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp LG(Y)            &kp ___        &kp ___ &kp ___ &kp ___ &kp ___
+    &kp LG(Z)       &kp LG(X)  &kp LG(V)    &kp LG(C)    &kp LG(LS(Z))        &kp ___        &kp ___ &kp ___ &kp ___ &kp ___
+                               &kp DEL      &kp BSPC     &kp ___              &kp ___        &kp ___ &kp ___
 )
 
 ZMK_LAYER(test_layer,
