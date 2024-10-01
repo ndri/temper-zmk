@@ -25,8 +25,8 @@
 
 ZMK_HOLD_TAP(hml,
     flavor = "balanced";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <100>;                // repeat on tap-into-hold
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;                // repeat on tap-into-hold
     require-prior-idle-ms = <100>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_R THUMBS>;
@@ -36,8 +36,8 @@ ZMK_HOLD_TAP(hml,
 /* right-hand HRMs */
 ZMK_HOLD_TAP(hmr,
     flavor = "balanced";
-    tapping-term-ms = <150>;
-    quick-tap-ms = <100>;                // repeat on tap-into-hold
+    tapping-term-ms = <200>;
+    quick-tap-ms = <150>;                // repeat on tap-into-hold
     require-prior-idle-ms = <100>;
     bindings = <&kp>, <&kp>;
     hold-trigger-key-positions = <KEYS_L THUMBS>;
