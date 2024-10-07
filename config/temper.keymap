@@ -95,10 +95,10 @@ ZMK_LAYER(nav_layer,
 // |   F5    |   F6    |   F7    |   F8    |         |              |         |    ←    |    ↓    |    ↑    |    →    |
 // |   F9    |   F10   |  F11    |  F12    |         |              |         |   Home  |  Ctrl+← |  Ctrl+→ |   End   |
 //                     |   ESC   |  SPACE  |   TAB   |              |         |  BCKSP  |   DEL   |
-   &kp F1    &kp F2    &kp F3    &kp F4     &kp ___                 &kp ___  &kp LG(LEFT) &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)
-  HRML(F5,       F6,       F7,       F8)    &kp ___                 &kp ___  &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
-   &kp F9    &kp F10   &kp F11   &kp F12    &kp ___                 &kp ___  &kp HOME     &kp LC(LEFT) &kp LC(RIGHT) &kp END
-                       &kp ESC   &kp SPACE  &kp TAB                 &kp ___  &kp BSPC     &kp DEL
+   &kp F1    &kp F2    &kp F3    &kp F4     &kp ___                 &bt BT_CLR &kp LG(LEFT) &kp PG_DN    &kp PG_UP     &kp LG(RIGHT)
+  HRML(F5,       F6,       F7,       F8)    &kp ___                 &kp ___    &kp LEFT     &kp DOWN     &kp UP        &kp RIGHT
+   &kp F9    &kp F10   &kp F11   &kp F12    &kp ___                 &kp ___    &kp HOME     &kp LC(LEFT) &kp LC(RIGHT) &kp END
+                       &kp ESC   &kp SPACE  &kp TAB                 &kp ___    &kp BSPC     &kp DEL
 )
 
 ZMK_LAYER(misc_layer,
@@ -107,7 +107,7 @@ ZMK_LAYER(misc_layer,
 // |   Play  | VolMute | VolDown |  VolUp  |  Redo2  |              |         |         |         |         |         |
 // |   Undo  |   Cut   |  Paste  |   Copy  |  Redo1  |              |         |         |         |         |         |
 //                     |   DEL   |  BCKSP  |         |              |         |         |         |
-    &kp &bootloader &kp C_STOP &kp C_PREV   &kp C_NEXT   &kp &sys_reset       &kp &sys_reset &kp ___ &kp ___ &kp ___ &kp &bootloader
+    &kp &bootloader &kp C_STOP &kp C_PREV   &kp C_NEXT   &bt BT_CLR           &kp &sys_reset &kp ___ &kp ___ &kp ___ &kp &bootloader
     &kp C_PLAY      &kp C_MUTE &kp C_VOL_DN &kp C_VOL_UP &kp LG(Y)            &kp ___        &kp ___ &kp ___ &kp ___ &kp ___
     &kp LG(Z)       &kp LG(X)  &kp LG(V)    &kp LG(C)    &kp LG(LS(Z))        &kp ___        &kp ___ &kp ___ &kp ___ &kp ___
                                &kp DEL      &kp BSPC     &kp ___              &kp ___        &kp ___ &kp ___
